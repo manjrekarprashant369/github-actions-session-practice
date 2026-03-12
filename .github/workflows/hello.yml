@@ -1,7 +1,7 @@
 # This is workflow name
 name: Hello
 
-# runs on a trigger
+# runs on an automatic trigger, whenever change is pushed to branch (deployment)
 on:
   push:
     branches: [main]
@@ -9,7 +9,7 @@ on:
 # These are jobs inside the workflow
 jobs:
 
-  # This is name of the job
+  # This is name of the job 1
   greet:
     # this is GitHub runner, each job runs on a runner
     runs-on: ubuntu-latest
