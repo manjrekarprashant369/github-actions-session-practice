@@ -7,7 +7,7 @@ on:
     inputs:
       environment:
         description: This is the environment value where this workflow runs
-        default: 'dev'
+        default: dev
         required: true
         type: choice
         options:
