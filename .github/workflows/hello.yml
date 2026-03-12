@@ -20,5 +20,15 @@ jobs:
         
       - name: say hello to username
         run: echo "Hello $USER"
+
+  # This is the name of job 2
+  show-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: versions of docker, python, etc
+        run: docker --version && python --version
+        
+    
+  
       
   
